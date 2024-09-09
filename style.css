@@ -1,0 +1,131 @@
+html {
+    background-image: url(https://external-preview.redd.it/GB5Adyp5zzQcoI4Jpbgf8tKfJ6GxgHmT8NHgtcrpi3o.png?auto=webp&s=5061d0c1e9c2aa20f503796ed065bef4ddbd363f);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body {
+    padding-left: 330px;
+
+
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 90px;
+}
+
+
+.card {
+    width: 130px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+
+
+}
+
+
+.card-front,
+.card-back {
+    width: 115%;
+    height: 115%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+
+
+}
+
+
+.card-front {
+    background-color: #3498db;
+    background-image: url(https://pm1.aminoapps.com/6862/7041a6388b6826e662badb690b13f6c01c2de340r1-255-316v2_hq.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+.card-back {
+    background-color: #2ecc71;
+    transform: rotateY(180deg)
+}
+
+
+
+.card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+
+.card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+img {
+    height: 115%;
+    width: 115%;
+
+}
+
+.scoreboard {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* body {
+    padding-left: 330px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+    
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-back {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    border-radius: 10px;
+}
+
+.scoreboard {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+} */
